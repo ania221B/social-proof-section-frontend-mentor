@@ -1,0 +1,89 @@
+/* ===== CUSTOM PROPERTIES ===== */
+
+:root {
+    --ff-primary: 'League Spartan', sans-serif;
+
+    --fs-400: 0.9375rem;
+    --fs-900: 2.5rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --clr-primary-100: hsl(300, 24%, 96%);
+    --clr-primary-400: hsl(303, 10%, 53%);
+    --clr-primary-900: hsl(300, 43%, 22%);    
+    
+    --clr-secondary-400: hsl(333, 80%, 67%);
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+.container {
+    width: 90%;
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+@media (min-width: 40em) {
+    .grid--2-col {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid--3-col {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+h1 {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-900);
+}
+
+.media-reviews__list p {
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-900);
+}
+
+.customer-reviews__list {
+    font-weight: var(--fw-500);
+}
+
+.customer-info p:first-of-type {
+    font-weight: var(--fw-700);
+}
+
+.customer-info p:nth-of-type(2) {
+    color: var(--clr-secondary-400)
+}
+
+/* ===== GENERAL STYLES ===== */
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    color: var(--clr-primary-400);
+}
+
+section {
+    padding-block: 4em;
+}
+
+/* ===== LISTS ===== */
+.media-reviews__list,
+.customer-reviews__list {
+    margin: 0;
+    padding: 0;
+}

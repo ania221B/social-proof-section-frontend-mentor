@@ -37,7 +37,7 @@ h1,
 h2,
 h3,
 h4 {
-    line-height: 1.1;
+    line-height: 0.8;
 }
 
 /* Gives default styles to a elements that don't have a class */
