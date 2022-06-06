@@ -186,6 +186,9 @@ section {
 }
 
 @media(min-width: 60em) {
+    .media-reviews__list {
+        padding-top: 1.5em;
+    }
     .media-reviews__list > *:first-child {
         align-self: start;
     }
