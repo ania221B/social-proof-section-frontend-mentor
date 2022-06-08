@@ -136,10 +136,6 @@ body {
     font-size: var(--fs-400);
     font-weight: var(--fw-400);
     color: var(--clr-primary-400);
-}
-
-main {
-    height: 100%;
     position: relative;
 }
 
