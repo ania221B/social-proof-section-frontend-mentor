@@ -4,6 +4,7 @@
     --ff-primary: 'League Spartan', sans-serif;
 
     --fs-400: 0.9375rem;
+    --fs-fixed: 0.9375rem;
     --fs-900: 2.5rem;
 
     --fw-400: 400;
@@ -22,7 +23,7 @@
 @media (min-width: 40em) {
     :root {
         --fs-400: 1.25rem;
-    --fs-900: 4rem;
+        --fs-900: 4rem;
     }
 }
 
@@ -47,9 +48,9 @@
 
 @media (min-width: 60em) {
     .grid--2-col {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
         grid-template-rows: auto auto;
-        gap: 3em 4em;
+        gap: 3em 0;
     }
 
     .grid--3-col {
@@ -112,7 +113,6 @@ h1 {
     font-weight: var(--fw-700);
     color: var(--clr-primary-900);
 }
-
 .customer-reviews__list {
     font-weight: var(--fw-500);
 }
@@ -158,17 +158,18 @@ picture:nth-of-type(2) {
     inset: auto 0 0 auto;
 }
 
-.reviews header {
+.reviews .header-main {
     text-align: center;
 }
 
 
 @media(min-width: 60em) {
-    .reviews header {
+    .reviews .header-main {
         grid-column: 1 ;
         grid-row: 1;
-        padding-inline-end: 2em;
+        padding-inline-end: 6em;
         text-align: left;
+        
     }
 
     .media-reviews {
@@ -223,6 +224,10 @@ picture:nth-of-type(2) {
     padding-inline: 2em;
     border-radius: 0.5em;
 }
+
+/* .customer-reviews__list header + p {
+    text-align: left;
+} */
 
 @media(min-width: 90em) {
     .grid--3-col > *:first-child {
