@@ -147,7 +147,7 @@ section {
 /* ===== LAYOUT ===== */
 
 picture {
-    position: absolute;
+     position: absolute;
 }
 
 picture:first-of-type {
