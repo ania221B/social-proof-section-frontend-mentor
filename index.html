@@ -24,17 +24,6 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -54,98 +43,108 @@
       </picture>
 
       <section class="reviews">
-        <div class="container grid grid--2-col">
-          <header class="header-main flow">
-            <h1>10,000+ of our users love our products.</h1>
-            <p>
-              We only provide great products combined with excellent customer
-              service. See what our satisfied customers are saying about our
-              services.
-            </p>
-          </header>
-          <div class="media-reviews">
-            <ul class="media-reviews__list flex-col flow" role="list">
-              <li class="flex-dynamic">
-                <!-- fix the stars -->
-                <div class="stars flex-row flex-gap--small">
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                </div>
-                <p>Rated 5 Stars in Reviews</p>
-              </li>
-              <li class="flex-dynamic">
-                <div class="stars flex-row flex-gap--small">
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                </div>
-                <p>Rated 5 Stars in Report Guru</p>
-              </li>
-              <li class="flex-dynamic">
-                <div class="stars flex-row flex-gap--small">
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                  <img
-                    src="images/icon-star.svg"
-                    alt="full star in the rating system"
-                  />
-                </div>
-                <p>Rated 5 Stars in BestTech</p>
-              </li>
-            </ul>
+        <div class="container grid">
+          <div class="grid-wrapper grid" data-columns="2">
+            <header class="header-main flow">
+              <h1>10,000+ of our users love our products.</h1>
+              <p>
+                We only provide great products combined with excellent customer
+                service. See what our satisfied customers are saying about our
+                services.
+              </p>
+            </header>
+            <div class="media-reviews">
+              <ul
+                class="media-reviews__list grid"
+                data-flow="tight"
+                role="list"
+              >
+                <li class="flex-dynamic">
+                  <div class="stars flex-row flex-gap" data-size="small">
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                  </div>
+                  <p>Rated 5 Stars in Reviews</p>
+                </li>
+                <li class="flex-dynamic">
+                  <div class="stars flex-row flex-gap" data-size="small">
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                  </div>
+                  <p>Rated 5 Stars in Report Guru</p>
+                </li>
+                <li class="flex-dynamic">
+                  <div class="stars flex-row flex-gap" data-size="small">
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                    <img
+                      src="images/icon-star.svg"
+                      alt="full star in the rating system"
+                    />
+                  </div>
+                  <p>Rated 5 Stars in BestTech</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="customer-reviews">
-            <ul class="customer-reviews__list grid grid--3-col" role="list">
+            <ul
+              class="customer-reviews__list grid"
+              data-columns="3"
+              data-flow="tight"
+              role="list"
+            >
               <li class="flow">
                 <header class="customer flex-row flex-gap">
                   <img
@@ -207,7 +206,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">ania221B</a>.
+        >. Coded by <a href="#" target="_blank">ania221B</a>.
       </div>
     </footer>
   </body>
